@@ -1,0 +1,67 @@
+html {
+    background-color: rgb(46, 46, 46);
+    color: lightblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 120px;
+}
+
+.container {
+    display: grid;
+    width: 440px;
+    height: 500px;
+    background-color:rgba(36, 36, 36, 0.8);
+    border: solid, rgba(36, 36, 36, 0.8);
+    border-radius: 4%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 10px;
+}
+
+button {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(117, 165, 182);
+    color: rgb(73, 73, 73);
+}
+
+.display {
+    grid-column: 1 / -1;
+    text-align: end;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.clear {
+    grid-column: 1 / span 2;
+}
+
+.delete {
+    grid-column: 3 / span 2
+}
+
+.number {
+    background-color: rgb(148, 185, 197);
+}
+
+.dot {
+    background-color: rgb(117, 165, 182);
+}
+
+button:hover {
+    background-color: rgb(103, 137, 150)
+}
+
+button:active {
+  background-color: rgb(70, 93, 102);
+  transform: translateY(2px);
+}
